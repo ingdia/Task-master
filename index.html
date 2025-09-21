@@ -38,30 +38,27 @@
     <main class=" flex flex-col md:flex-row m-5 w-auto gap-4  ">
         <!-- the right side with filters -->
       <aside class="bg-zinc-900 rounded-2xl w-auto p-6 md:px-10 lg:px-10 mb-4 md:ml-16 md:w-[200px] md:min-h-[400px]">
-         <div class="">
-            <p>Filters</p>
-            <buttorn>Togo</buttorn>
+         <div class="flex justify-between mb-4">
+            <p class="font-bold  text-26">Filters</p>
+            <button><i class="fa-solid fa-toggle-off"></i></button>
          </div>
-         <div class="">
-            <ul class="">
+         <h2 class="mb-2 text-violet-500">Status</h2>
+         <div class="flex flex-col mb-3 pl-4">
+            <ul class="flex md:flex-col gap-4">
                 <li><i class="fa-solid fa-clipboard-list"></i>All</li>
                 <li><i class="fa-solid fa-list"></i>Pending</li>
                 <li><i class="fa-solid fa-list-check"></i>Completed</li>
             </ul>
          </div>
-         <!-- project -->
-         <div>
-           <div>
-            <h2>project</h2>
-            <p><i class="fa-solid fa-plus"></i></p>
-           </div>
-           <ul>
-            <li><i class="fa-solid fa-folder"></i>default</li>
-           </ul>
-         </div>
+        
 
-         <div>
-            <i class="fa-solid fa-user-circle"></i>
+          <h2 class="mb-2 text-violet-500"> Priority</h2>
+         <div class="flex flex-col mb-3 pl-4 ">
+            <ul class="flex md:flex-col gap-4">
+                <li><i class="fa-solid fa-clipboard-list"></i>low</li>
+                <li><i class="fa-solid fa-list"></i>Medium</li>
+                <li><i class="fa-solid fa-list-check"></i>High</li>
+            </ul>
          </div>
 
       </aside>
@@ -76,9 +73,9 @@
                 <input type="checkbox"class="" id="checkbox"/>
                </button> 
                <!-- middle input -->
-               <div class="flex bg-zinc-700 w-204 px-2 py-2">
+               <div class="flex bg-zinc-700 w-204 px-2 py-2 justify-between">
                 <p>working with my mission</p>
-                <button>edit</button>
+                <button><i class="fa-solid fa-edit"></i></button>
                </div>
                <!-- action btn -->
                <button class="bg-zinc-700 w-10 rounded-br-2xl rounded-tr-2xl">
