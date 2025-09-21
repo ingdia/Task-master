@@ -59,3 +59,7 @@ cd to-do-app
 Simply open index.html in your browser.
 (No build step required – pure HTML/TailwindCSS/JS project.
 
+## Screenshots
+
+### Task Buddy UI  
+![Task Buddy Screenshot](assets/images/imge.png) 
