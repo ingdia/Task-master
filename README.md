@@ -57,7 +57,8 @@ cd to-do-app
 
 2. Open the project
 Simply open index.html in your browser.
-(No build step required – pure HTML/TailwindCSS/JS project.
+
+- (No build step required – pure HTML/TailwindCSS/JS project.
 
 ## Screenshots
 
