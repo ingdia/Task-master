@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>My Task Buddy</title>
+</head>
+<body class="bg-black text-white font-serif">
+    <header class="bg-zinc-900 flex flex-col m-5 p-6 gap-6 md:flex-row md:justify-between lg:px-10 lg:mx-20  rounded-[40px]">
+        <!-- the right side of the header -->
+        <div>
+          <h1 class="font-bold text-[28px] mb-2">My <span class="text-violet-500">Todo</span> Buddy</h1>
+          <p class="text-[16px]">“Stay focused. Stay productive.”</p>
+          <p clas="text-[16px]">“Plan smarter. Live better”</p>
+        </div>
+        <!-- the left side of the header(form) -->
+        
+       <form class="md:mt-12 flex flex-col lg:flex-row space-x-6">
+         <input type="text" placeholder="task" class="bg-black border-1 border-violet-600 mb-4 px-2 py-1 md:py-2 w-auto md:w-[400px] md:px-4 rounded-2xl" required/>
+         <div class="space-x-6">
+            <select name="status" class=" bg-black rounded-2xl border-1 border-violet-600 mb-4 px-2 py-1 md:py-2 w-auto" required>
+            <option value="pending">To do</option>
+            <option value="completed">completed</option>
+         </select>
+         <button type="submit" class="bg-violet-500 p-2 px-4 rounded-full">Add Task</button>
+         </div>
+       </form>
+        
+    </header>
+    <!-- here is the main section  -->
+    <main>
+        <!-- the right side with filters -->
+      <aside>
+         <div>
+            <p>Filters</p>
+            <buttorn>Togo</buttorn>
+         </div>
+         <div>
+            <ul>
+                <li><i class="fa-solid fa-clipboard-list"></i>All</li>
+                <li><i class="fa-solid fa-list"></i>Pending</li>
+                <li><i class="fa-solid fa-list-check"></i>Completed</li>
+            </ul>
+         </div>
+
+      </aside>
+
+      <div>
+         <!-- here is the left side with list -->
+      </div>
+    </main>
+
+</body>
+</html>
