@@ -8,10 +8,10 @@
     <title>My Task Buddy</title>
 </head>
 <body class="bg-black text-white font-serif">
-    <header class="bg-zinc-900 flex flex-col m-5 p-6 gap-6 md:flex-row md:justify-between lg:px-10 lg:mx-20  rounded-[40px]">
+    <header class="bg-zinc-900 flex flex-col m-5 p-6 gap-6 md:flex-row md:justify-between md:px-10 lg:px-10 lg:mx-20 md:mx-20  rounded-[40px]">
         <!-- the right side of the header -->
         <div>
-          <h1 class="font-bold text-[28px] mb-2">My <span class="text-violet-500">Todo</span> Buddy</h1>
+          <h1 class="font-bold text-[32px] mb-2">My <span class="text-violet-500">Todo</span> Buddy</h1>
           <p class="text-[16px]">“Stay focused. Stay productive.”</p>
           <p clas="text-[16px]">“Plan smarter. Live better”</p>
         </div>
@@ -24,21 +24,26 @@
             <option value="pending">To do</option>
             <option value="completed">completed</option>
          </select>
+            <select name="Priority" class=" bg-black rounded-2xl border-1 border-violet-600 mb-4 px-2 py-1 md:py-2 w-auto" required>
+            <option value="pending">Low</option>
+            <option value="completed">Medium</option>
+            <option value="completed">High</option>
+         </select>
          <button type="submit" class="bg-violet-500 p-2 px-4 rounded-full">Add Task</button>
          </div>
        </form>
         
     </header>
     <!-- here is the main section  -->
-    <main class=" flex flex-col m-2 p-6 gap-6 md:flex-row md:justify-between lg:px-6 lg:mx-14  ">
+    <main class=" flex flex-col md:flex-row m-5 w-auto gap-4  ">
         <!-- the right side with filters -->
-      <aside class="bg-zinc-900 w-[300px] rounded-2xl md:p-10">
-         <div class="flex flex-row justify-between p-4">
+      <aside class="bg-zinc-900 rounded-2xl w-auto p-6 md:px-10 lg:px-10 mb-4 md:ml-16 md:w-[200px] md:min-h-[400px]">
+         <div class="">
             <p>Filters</p>
             <buttorn>Togo</buttorn>
          </div>
          <div class="">
-            <ul class="flex flex-row md:flex-col justify-evenly">
+            <ul class="">
                 <li><i class="fa-solid fa-clipboard-list"></i>All</li>
                 <li><i class="fa-solid fa-list"></i>Pending</li>
                 <li><i class="fa-solid fa-list-check"></i>Completed</li>
@@ -61,24 +66,24 @@
 
       </aside>
 
-      <div class="bg-zinc-900  md:w-[900px] rounded-2xl">
+      <div class="bg-zinc-900 rounded-2xl w-auto p-6 md:w-[700px] md:mr-16 lg:w-[990px] min-h-[400px]">
          <!-- here is the left side with list -->
-          <h2 class="py-2 px-4 font-bold text-[20px] text-violet-500">Tasks</h2>
+          <h2 class="font-bold text-violet-500 text-[28px] mb-4">Tasks</h2>
           <form class="">
-            <div class="flex flex-row justify-between p-10">
+            <div class="flex justify-between  px-4">
                 <!-- select box -->
-               <div class="flex flex-row justify-evenly">
-                <input type="checkbox"class="rounded-2xl" id="checkbox"/>
-               </div> 
+               <button class="bg-zinc-700 w-10 rounded-bl-2xl rounded-tl-2xl">
+                <input type="checkbox"class="" id="checkbox"/>
+               </button> 
                <!-- middle input -->
-               <div class="flex flex-row  border-1 border-violet-600">
+               <div class="flex bg-zinc-700 w-204 px-2 py-2">
                 <p>working with my mission</p>
                 <button>edit</button>
                </div>
                <!-- action btn -->
-                <div class="flex flex-row justify-evenly">
+               <button class="bg-zinc-700 w-10 rounded-br-2xl rounded-tr-2xl">
                 <i class="fa-solid fa-trash"></i>
-                </div>
+                </button>
             </div>
           </form>
       </div>
