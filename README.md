@@ -62,4 +62,4 @@ Simply open index.html in your browser.
 ## Screenshots
 
 ### Task Buddy UI  
-![Task Buddy Screenshot](assets/images/imge.png) 
+![Task Buddy Screenshot](assets/images/image.png) 
