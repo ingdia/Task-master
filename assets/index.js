@@ -2,7 +2,7 @@
 let tasklist = [];
 
 // laoding a saved tasks if any
-window.addEventListener("loading_content", function() {
+window.addEventListener("DOMContentLoaded", function() {
     const savedTasks = localStorage.getItem("tasks");
     if (savedTasks) {
         tasklist = JSON.parse(savedTasks);
@@ -40,7 +40,7 @@ function renderTask(task) {
 
     taskDiv.innerHTML = `
         <button class="bg-zinc-700 w-10 rounded-bl-2xl rounded-tl-2xl">
-            <input type="checkbox" ${task.status === 'complete' ? 'checked' : ''} />
+            <input type="checkbox"  ${task.status === 'complete' ? 'checked' : ''} />
         </button>
         <div class="flex bg-zinc-700 w-204 px-2 py-2 justify-between">
             <p>${task.name} [${task.status}] - Priority: 
