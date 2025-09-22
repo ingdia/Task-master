@@ -2,7 +2,7 @@
 let tasklist = [];
 
 // laoding a saved tasks if any
-window.addEventListener("loading a content", function() {
+window.addEventListener("loading_content", function() {
     const savedTasks = localStorage.getItem("tasks");
     if (savedTasks) {
         tasklist = JSON.parse(savedTasks);
