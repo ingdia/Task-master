@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <script src="./assets/index.js" defer></script>
         <script src="https://kit.fontawesome.com/297096f977.js" crossorigin="anonymous"></script>
     <title>My Task Buddy</title>
 </head>
@@ -17,19 +18,19 @@
         </div>
         <!-- the left side of the header(form) -->
         
-       <form class="md:mt-12 flex flex-col lg:flex-row space-x-6">
-         <input type="text" placeholder="task" class="bg-black border-1 border-violet-600 mb-4 px-2 py-1 md:py-2 w-auto md:w-[400px] md:px-4 rounded-2xl" required/>
+       <form class="md:mt-12 flex flex-col lg:flex-row space-x-6" id="addForm">
+         <input name="task" type="text" placeholder="task" id="inputTask" class="bg-black border-1 border-violet-600 mb-4 px-2 py-1 md:py-2 w-auto md:w-[400px] md:px-4 rounded-2xl" required/>
          <div class="space-x-6">
-            <select name="status" class=" bg-black rounded-2xl border-1 border-violet-600 mb-4 px-2 py-1 md:py-2 w-auto" required>
+            <select name="status" id="select_status"class=" bg-black rounded-2xl border-1 border-violet-600 mb-4 px-2 py-1 md:py-2 w-auto" required>
             <option value="pending">To do</option>
             <option value="completed">completed</option>
          </select>
-            <select name="Priority" class=" bg-black rounded-2xl border-1 border-violet-600 mb-4 px-2 py-1 md:py-2 w-auto" required>
-            <option value="pending">Low</option>
-            <option value="completed">Medium</option>
-            <option value="completed">High</option>
+            <select name="priority" id="select_priority" class=" bg-black rounded-2xl border-1 border-violet-600 mb-4 px-2 py-1 md:py-2 w-auto" required>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
          </select>
-         <button type="submit" class="bg-violet-500 p-2 px-4 rounded-full">Add Task</button>
+         <button type="submit" id="btn-submit" class="bg-violet-500 p-2 px-4 rounded-full">Add Task</button>
          </div>
        </form>
         
@@ -63,26 +64,12 @@
 
       </aside>
 
-      <div class="bg-zinc-900 rounded-2xl w-auto p-6 md:w-[700px] md:mr-16 lg:w-[990px] min-h-[400px]">
+      <div class="bg-zinc-900 rounded-2xl w-auto p-6 md:w-[200px] md:mr-16 lg:w-[990px] min-h-[400px]">
          <!-- here is the left side with list -->
           <h2 class="font-bold text-violet-500 text-[28px] mb-4">Tasks</h2>
-          <form class="">
-            <div class="flex justify-between  px-4">
-                <!-- select box -->
-               <button class="bg-zinc-700 w-10 rounded-bl-2xl rounded-tl-2xl">
-                <input type="checkbox"class="" id="checkbox"/>
-               </button> 
-               <!-- middle input -->
-               <div class="flex bg-zinc-700 w-204 px-2 py-2 justify-between">
-                <p>working with my mission</p>
-                <button><i class="fa-solid fa-edit"></i></button>
-               </div>
-               <!-- action btn -->
-               <button class="bg-zinc-700 w-10 rounded-br-2xl rounded-tr-2xl">
-                <i class="fa-solid fa-trash"></i>
-                </button>
-            </div>
-          </form>
+         <div id="container">
+            
+       </div>
       </div>
     </main>
 
