@@ -38,12 +38,16 @@ function renderTask(task) {
     taskDiv.className = "flex justify-between px-4 mb-2";
     taskDiv.setAttribute("data-id", task.id);
 
+      const completeStyle = task.status === 'complete' 
+        ? 'line-through text-gray-400 opacity-70' 
+        : '';
+
     taskDiv.innerHTML = `
         <button class="bg-zinc-700 w-10 rounded-bl-2xl rounded-tl-2xl">
             <input type="checkbox"  ${task.status === 'complete' ? 'checked' : ''} />
         </button>
         <div class="flex bg-zinc-700 w-204 px-2 py-2 justify-between">
-            <p>${task.name} [${task.status}] - Priority: 
+            <p class="${completeStyle}">${task.name} [${task.status}] - Priority: 
                 <span class="${selectpriorityOptions(task.priority)}">${task.priority}</span>
             </p>
             <button class="edit-btn"><i class="fa-solid fa-edit"></i></button>
@@ -124,3 +128,5 @@ document.getElementById("container").addEventListener("click", function(e) {
         });
     }
 });
+
+

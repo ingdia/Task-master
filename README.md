@@ -35,7 +35,7 @@ This project goes beyond basic task management by introducing priority levels an
 - Priority Levels 
 - - High / Medium / Low labels with distinct visuals.
 
-## Technologies Used
+## Technologies and tools Used
 - HTML5 – Semantic and accessible markup.
 
 - Tailwind CSS – Modern, responsive utility-first CSS framework.
@@ -46,19 +46,38 @@ This project goes beyond basic task management by introducing priority levels an
 
 - LocalStorage – Persistent client-side data storage.
 
+- Tools: VS CODE and git 
+
+## Folder structure 
+
+```bash
+Task-master/
+├── index.html   #  shows the structure and the design for the ui
+├── README.md    ##  a documentation about the project
+├── assets/        
+│   ├── index.js      # logic behine
+│   └── images/       #images used in web
+│       ├── image.png
+│       └── my.png
+
+```
+
+
 ## Setup Instructions
 
 1. Clone the repository
 
 ```bash
+
 git clone https://github.com/your-username/to-do-app.git
 cd to-do-app
+
 ```
 
 2. Open the project
 Simply open index.html in your browser.
 
-- (No build step required – pure HTML/TailwindCSS/JS project.
+> (No build step required – pure HTML/TailwindCSS/JS project.
 
 ## Screenshots
 
